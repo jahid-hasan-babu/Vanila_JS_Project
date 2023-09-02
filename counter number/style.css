@@ -1,0 +1,10 @@
+.div1{
+    background-color: blueviolet;
+    width: 30%;
+    height: 220px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    float: left;
+    margin-right: 20px;
+}

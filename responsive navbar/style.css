@@ -1,0 +1,51 @@
+.navbar{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 14px;
+}
+.contaioner a{
+    font-size: 1.7rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.navbar i{
+    display: none;
+}
+.icone{
+    color: #fff;
+    font-size: 2.4rem;
+    display: none;
+}
+
+@media (max-width: 800px){
+    
+    .icone{
+        position: relative;
+        left: -160px;
+    }
+    .navbar i{
+        display: block;
+    }
+    .contaioner a{
+       display: flex;
+       flex-direction: column;
+       margin-top: 50px;
+       padding: 10px;
+       display: none;
+    }
+    .open a{
+        display: block;
+        color: aqua;
+    }
+    .contaioner a:hover{
+        background-color: black;
+    }
+}
+@media (max-width:400px){
+    .icone{
+        margin-left: 100px;
+    }
+}

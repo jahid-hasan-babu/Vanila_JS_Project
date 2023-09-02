@@ -1,0 +1,32 @@
+.main{
+   text-align: center;
+}
+.main input{
+    width: 20%;
+    padding: 8px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+}
+
+.to-do-item{
+    background-color: #fff;
+    width: 400px;
+    height: 400px;
+    box-shadow: 4px 5px 10px #000;
+    margin: auto;
+}
+li{
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+}
+
+

@@ -1,0 +1,41 @@
+input{
+    width: 90%;
+    padding: 10px;
+}
+
+
+.main-class{
+   width: 45%;
+   margin-left: 30px;
+   float: left;
+}
+button{
+    background-color: blueviolet;
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 1.5rem;
+    box-shadow: 2px 3px 5px #000;
+    border-radius: 5px;
+}
+table{
+    width: 90%;
+    text-align: center;
+}
+table,th,td{
+    padding: 10px;
+    border: 2px solid rgb(245, 248, 245);
+    color: #fff;
+    border-collapse: collapse;
+}
+h1{
+    text-align: center;
+    background-color: aqua;
+    color: #fff;
+    padding: 14px;
+}
+tr:nth-child(even){
+    background-color: blueviolet;
+}
+tr:nth-child(odd){
+    background-color: rgb(48, 208, 160);
+}

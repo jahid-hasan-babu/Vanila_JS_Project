@@ -1,0 +1,16 @@
+img{
+    width: 600px;
+    height: 600px;
+}
+button{
+    padding: 10px 20px;
+    background-color: tomato;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: 2px 3px 10px #000;
+}
+.div{
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: violet;
+        }
+        h1{
+            margin-top: 12rem;
+            text-align: center;
+        }
+        h1::after{
+            border-right: 2px solid #fff;
+            content: '';
+            position: relative;
+            left: 10px;
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        var title = document.querySelector('h1');
+        var text = "MY name is Jahid hasan babu";
+        var index = 0;
+
+        setInterval(fun,100);
+        function fun(){
+            title.innerHTML = text.slice(0,index++);
+            if(index > text.length){
+                index = 0;
+            }
+        }
+    </script>
+</body>
+</html>

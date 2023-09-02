@@ -1,0 +1,17 @@
+h1{
+    color: blueviolet;
+    margin-top: 12rem;
+    text-align: center;
+}
+input{
+    width: 40%;
+    padding: 10px;
+}
+form{
+    text-align: center;
+}
+i{
+    font-size: 25px;
+    padding: 10px;
+    color: rgb(89, 114, 114);
+}

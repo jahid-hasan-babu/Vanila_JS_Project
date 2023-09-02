@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/352a4dce2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="image/back.png" class="song-img">
+            <h1>Felling</h1>
+            <p>Junayed khan</p>
+
+
+            <audio controls>
+                <source src="image/felling.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+
+            <div class="controls" id="song">
+               
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i id="control-icon" class="fa-solid fa-play"></i></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+
+
+ <script>
+let progress = document.getElementById("progress");
+let song = document.getElementById("song");
+let controlIcon = document.getElementById("control-icon");
+
+song.onloadedmetadata = function(){
+    progress.max = song.duration;
+    progress.value = song.currentTime;
+}
+
+
+function playPause(){
+    if(controlIcon.classList.contains("fa-pause")){
+        song.pause();
+        controlIcon.classList.remove("fa-pause");
+        controlIcon.classList.add("fa-play");
+    }
+    else{
+      song.play();
+      controlIcon.classList.add("fa-pause");
+      controlIcon.classList.remove("fa-play");
+    }
+}
+
+if(song.play()){
+    setInterval(() => {
+        progress.value = song.currentTime;
+    }, 500);
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.container{
+    width: 700px;
+    height: 600px;
+    background-color: teal;
+    margin: auto;
+    text-align: center;
+}
+
+select{
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(123, 4, 234);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+h1{
+    padding: 10px;
+    color: #fff;
+    background-color: ;
+    text-align: center;
+}
+#select{
+    margin-top: 10px;
+}

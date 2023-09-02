@@ -1,0 +1,17 @@
+.arrow{
+    background-color: red;
+    color: #fff;
+    font-size: 3rem;
+    width: 80px;
+    height: 70px;
+    position: fixed;
+    left: 1450px;
+    top: 650px;
+    display: none;
+}
+.arrow.active{
+    display: block;
+}
+html{
+    scroll-behavior: smooth;
+}

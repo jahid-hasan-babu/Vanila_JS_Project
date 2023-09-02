@@ -1,0 +1,18 @@
+.div1{
+    width: 30%;
+    background-color: blue;
+    height: 300px;
+    float: left;
+    margin-left: 20px;
+
+}
+h1{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+h2{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center; 
+}
